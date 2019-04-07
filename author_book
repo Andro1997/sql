@@ -1,0 +1,4 @@
+SELECT a.[name] AS "Автор", COUNT(*) AS "Кол-во книг" 
+FROM author a 
+INNER JOIN book b ON a.id=b.author_id 
+GROUP BY a.[name]
